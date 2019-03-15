@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Zadanie 3. JavaScript &mdash; DOM</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Łukasz Krawczyk (Web Developer / Graphic &amp; Web Designer)" />
+</head>
+<body>
+
+    <script>
+
+        /*
+        
+        - Stwórz nowy element, którym będzie akapit p.
+        
+        - Stwórz nowy węzeł tekstowy o treści "Lorem ipsum dolor sit amet...".
+        
+        - Podepnij stworzony węzeł tekstowy do stworzonego akapitu p (jako ostatnie dziecko).
+        
+        - Podepnij stworzony (i wyposażony już oczywiście w tekst) akapit p do body (jako ostatnie dziecko).
+
+        */
+
+        const paragraph = document.createElement('p');
+        const text = document.createTextNode('Lorem ipsum dolor sit amet...');
+        paragraph.appendChild(text);
+        const body = document.querySelector('body');
+        body.appendChild(paragraph);
+
+    </script>
+
+</body>
+</html>
