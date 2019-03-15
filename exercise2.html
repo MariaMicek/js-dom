@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Zadanie 2. JavaScript &mdash; DOM</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Łukasz Krawczyk (Web Developer / Graphic &amp; Web Designer)" />
+</head>
+<body>
+
+    <script>
+
+        // Napisz funkcję, która - po 2-krotnym kliknięciu w dowolnym miejscu okna (obiekt window) - w oknie modalnym alert() wyświetli aktualną pozycję kursora (tzn. współrzędne X oraz Y) w obszarze przeglądarki oraz aktualną pozycję kursora (tzn. współrzędne X oraz Y) na ekranie.
+
+        window.addEventListener('dblclick', function(event){
+            
+            alert('pozycja kursora w przglądarce: ' + event.clientX + ' / ' + event.clientY + '\npozycja kursora na ekranie: ' + event.screenX + ' / ' + event.screenY);
+        })
+
+
+    </script>
+
+</body>
+</html>
